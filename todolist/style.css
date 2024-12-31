@@ -1,0 +1,149 @@
+body {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif; /* Konsistensi font */
+    color: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.dark-container {
+    width: 400px;
+    background-color: rgba(30, 30, 30, 0.95);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 350px;
+    background-color: rgba(50, 50, 50, 0.85);
+    padding: 20px 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(200, 200, 200, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+button {
+    width: 85%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    background-color: rgba(200, 200, 200, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+ul li {
+    text-align: left;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li span {
+    flex: 1;
+    word-wrap: break-word;
+}
+
+ul li button {
+    background-color: transparent;
+    color: #e74c3c;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+ul li button:hover {
+    color: #c0392b;
+}
+
+.deadline {
+    font-size: 0.8em;
+    font-weight: 500; /* Konsisten dengan font */
+    color: #eee;
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color: #2ecc71; /* Warna lebih menarik */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.deadline:hover {
+    transform: scale(1.05);
+    background-color: #2ecc71;
+}
+
+.deadline::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M19 4h-1V3a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v1H4v14h16V4zM9 10h2v2H9v-2zM15 10h2v2h-2v-2z'/%3E%3C/svg%3E");
+    margin-right: 5px;
+}
+.profile-picture {
+    width: 150px; /* Lebar gambar */
+    height: 150px; /* Tinggi gambar */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    margin-bottom: 20px; /* Jarak bawah gambar */
+    border: 4px solid rgba(255, 255, 255, 0.5); /* Border semi-transparan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Bayangan lembut */
+    background-color: rgba(50, 50, 50, 0.8); /* Latar belakang abu jika gambar gagal dimuat */
+}
+
